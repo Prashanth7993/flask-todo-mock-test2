@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: prashanth7993/todo-mock-test-2:v2  # Replace with your actual image
+          image: prashanth7993/todo-mock-test-2:v2  
           ports:
             - containerPort: 5000
