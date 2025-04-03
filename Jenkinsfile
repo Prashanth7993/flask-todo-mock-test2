@@ -13,7 +13,7 @@ pipeline {
                     withCredentials([usernamePassword(credentialsId: 'Docker_Hub_Credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                         sh 'docker login -u $DOCKER_USER -p $DOCKER_PASS'
                         sh 'docker tag flask-app  $DOCKER_USER/todo-mock-test-2:v2'
-                        sh 'docker push $DOCKER_USER/todo-mock-test-2:v2
+                        sh 'docker push $DOCKER_USER/todo-mock-test-2:v2'
                     }
             }
         }    
